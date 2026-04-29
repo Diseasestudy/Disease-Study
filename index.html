@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Bar: Logo + Login -->
+<header class="top-bar">
+    <div class="container">
+        <h1 class="logo">My Website</h1>
+        <div class="auth-buttons">
+            <button class="btn-login">Login</button>
+            <button class="btn-signup">Sign Up</button>
+        </div>
+    </div>
+</header>
+
+<!-- Nav Bar: Menu links -->
+<nav class="main-nav">
+    <div class="container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-btn" onclick="toggleTheme()">🌙</button></li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="card">
+            <h1>My Name is Ali.</h1>
+            <p>Web Developer | Learner</p>
+            <button onclick="sayHello()">Hello Bolo</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Main web development seekh raha hoon. Mujhe coding aur games banana pasand hai. Ye mera Day-2 ka project hai.</p>
+        <h3>My Skills:</h3>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript - Learning</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <form id="contactForm">
+			<input type="text" placeholder="Tumhara Naam" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message likho"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+	    <script src="script.js"></script>
+</body>
+</html>
